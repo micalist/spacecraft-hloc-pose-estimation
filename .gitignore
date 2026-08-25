@@ -1,0 +1,60 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Environments and package caches
+.venv/
+.venv-*/
+venv/
+.torch_cache/
+pip-cache/
+
+# Local configuration
+.env
+config/env.local.ps1
+
+# IDE and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Third-party source trees (clone during setup)
+/Hierarchical-Localization/
+/LightGlue/
+
+# Datasets and generated experiment outputs
+/shirtv1/
+/pilot_roe1_synthetic_v1/
+/archives/
+/artifacts/
+
+# Local Word/PDF lab records and their generation helpers
+/docs/experiment_logs/
+/docs/references/
+/scripts/append_*.py
+*.docx
+*.doc
+~$*
+
+# Runtime products
+*.log
+*.tmp
+*.bak
+*.db
+*.h5
+*.bin
+*.npy
+*.npz
+*.pt
+*.pth
+*.ckpt
+*.onnx

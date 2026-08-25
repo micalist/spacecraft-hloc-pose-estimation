@@ -1,0 +1,24 @@
+name: Syntax check
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Compile public experiment scripts
+        run: |
+          python -m py_compile \
+            scripts/project_paths.py \
+            scripts/check_environment.py \
+            scripts/prepare_roe1_pilot.py \
+            scripts/run_hloc_pilot.py \
+            scripts/diagnose_map40.py \
+            scripts/run_experiment5_model_unification.py \
+            scripts/run_experiment6_mapping_scaling.py

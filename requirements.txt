@@ -1,0 +1,17 @@
+# Tested with Python 3.11. Install a PyTorch build appropriate for your CUDA
+# runtime first when the default wheel is not suitable for your machine.
+torch>=2.1
+torchvision>=0.16
+numpy>=1.24
+scipy>=1.10
+opencv-python>=4.8
+h5py>=3.8
+matplotlib>=3.7
+networkx>=3.1
+psutil>=5.9
+Pillow>=10.0
+pycolmap>=3.13,<3.14
+kornia>=0.6.11
+tqdm>=4.36
+plotly>=5.0
+gdown>=4.7
